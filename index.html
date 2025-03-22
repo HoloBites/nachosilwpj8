@@ -19,7 +19,7 @@
             // Add reset function
             function resetModel() {
                 const model = document.getElementById('bowser-model');
-                model.setAttribute('scale', '1 1 1');
+                model.setAttribute('scale', '0.09 0.09 0.09');
                 model.setAttribute('rotation', '0 0 0');
             }
         </script>
@@ -95,11 +95,11 @@
             >
                 <a-entity
                     id="bowser-model"
-                    scale="1 1 1"
+                    scale="0.09 0.09 0.09"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
                     class="clickable"
-                    gesture-handler="enabled: true; rotationFactor: 1; minScale: 0.5; maxScale: 4; scaleEnabled: true"
+                    gesture-handler="enabled: true; rotationFactor: 1; minScale: 0.009; maxScale: 1; scaleEnabled: true"
                 ></a-entity>
             </a-marker>
             <a-entity camera></a-entity>

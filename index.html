@@ -19,7 +19,7 @@
             // Add reset function
             function resetModel() {
                 const model = document.getElementById('bowser-model');
-                model.setAttribute('scale', '0.00973657784901797 0.00973657784901797 0.00973657784901797');
+                model.setAttribute('scale', '1 1 1');  // Default scale is now simpler
                 model.setAttribute('rotation', '0 0 0');
             }
         </script>
@@ -95,11 +95,11 @@
             >
                 <a-entity
                     id="bowser-model"
-                    scale="0.00973657784901797 0.00973657784901797 0.00973657784901797"
+                    scale="1 1 1"  <!-- Simplified default scale -->
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
                     class="clickable"
-                    gesture-handler="enabled: true; rotationFactor: 1; minScale: 0.001; maxScale: 0.05; scaleEnabled: true"
+                    gesture-handler="enabled: true; rotationFactor: 1; minScale: 0.5; maxScale: 3; scaleEnabled: true"
                 ></a-entity>
             </a-marker>
             <a-entity camera></a-entity>
